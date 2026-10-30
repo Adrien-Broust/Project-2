@@ -4,10 +4,11 @@ class Map
 public:
 	void createMap();
 private:
-	int longueur = 20;
-	int largeur = 10;
+	static const int longueur = 20;
+	static const int largeur = 10;
+	int dataMap[longueur][largeur];
 	
-	enum Terrain
+	enum Terrains
 	{
 		Sol,
 		Montagne,

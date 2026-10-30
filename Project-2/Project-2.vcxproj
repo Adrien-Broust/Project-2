@@ -131,6 +131,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Swimmer.cpp" />
     <ClCompile Include="Warrior.cpp" />
     <ClCompile Include="Zombie.cpp" />
     <ClCompile Include="ZombieSwimmer.cpp" />
@@ -143,6 +144,8 @@
     <ClInclude Include="Mage.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Swimmer.h" />
+    <ClInclude Include="Utilities.h" />
     <ClInclude Include="Warrior.h" />
     <ClInclude Include="Zombie.h" />
     <ClInclude Include="ZombieSwimmer.h" />

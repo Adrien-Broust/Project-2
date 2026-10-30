@@ -2,6 +2,9 @@
 #include "Player.h"
 class Warrior : public Player
 {
-	int PV = 4;
+	Warrior()
+	{
+		pv = 4;
+	}
 };
 

@@ -3,15 +3,17 @@
 class Enemy : public Entity 
 {
 public:
-	void deplacer() override;
+	virtual bool move() = 0;
+	virtual bool canMove() = 0;
 
-	void collision() override;
+	void damaged();
+	bool isAlive();
 
-	virtual void deplacerEnemy() = 0;
+	virtual void moveEnemy() = 0;
+
+	
 private:
-	int PV = 1;
-	int x;
-	int y;
-
+	vector2 pos;
+	int pv = 1;
 };
 
