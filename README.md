@@ -1,2 +1,2 @@
-# Project 2
-
+Adrien Broust
+Olivier But
