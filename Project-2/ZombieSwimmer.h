@@ -1,10 +1,8 @@
 #pragma once
 #include "Zombie.h"
-class ZombieSwimmer : public Zombie
+#include "Swimmer.h"
+class ZombieSwimmer : public Zombie , Swimmer
 {
-public:
-	void Noyade();	
-private:
-	int O2;
+
 };
 

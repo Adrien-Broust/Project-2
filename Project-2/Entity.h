@@ -1,12 +1,20 @@
 #pragma once
+#include "Utilities.h"
 class Entity
 {
 public:
-	virtual void deplacer() = 0;
+	vector2 pos;
+	int pv;
 
-	virtual void collision() = 0;
+public:
+	virtual vector2 getDirection() = 0;
+	virtual bool move() = 0;
+	virtual bool canMove() = 0;
+	virtual void onCollision() = 0;
+
+	virtual void damaged() = 0;
+	virtual bool isAlive() = 0;
 
 	virtual ~Entity() = default;
-
 };
 

@@ -3,9 +3,11 @@
 class Mage : public Player
 {
 public:
+	virtual vector2 getDirection() override; // getch
 	void Spell();
-private:
-	int PV = 1;
 
+	Mage()
+	{
+		pv = 1;
+	}
 };
-

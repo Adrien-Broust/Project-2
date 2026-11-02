@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\ZombieSwimmer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\ZombieSwimmer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Swimmer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Swimmer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Mage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Mage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\HeadlessZombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\HeadlessZombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1487C2BC-A27F-4767-8F70-AA9C01CD25B8}|Project-2\\Project-2.vcxproj|solutionrelative:Project-2\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Swimmer.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Swimmer.h",
+              "RelativeDocumentMoniker": "Project-2\\Swimmer.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Swimmer.h",
+              "RelativeToolTip": "Project-2\\Swimmer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:56:31.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Utilities.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Utilities.h",
+              "RelativeDocumentMoniker": "Project-2\\Utilities.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Utilities.h",
+              "RelativeToolTip": "Project-2\\Utilities.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:55:56.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ZombieSwimmer.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\ZombieSwimmer.h",
+              "RelativeDocumentMoniker": "Project-2\\ZombieSwimmer.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\ZombieSwimmer.h",
+              "RelativeToolTip": "Project-2\\ZombieSwimmer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:55:28.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Zombie.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Zombie.h",
+              "RelativeDocumentMoniker": "Project-2\\Zombie.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Zombie.h",
+              "RelativeToolTip": "Project-2\\Zombie.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:55:10.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Warrior.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Warrior.h",
+              "RelativeDocumentMoniker": "Project-2\\Warrior.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Warrior.h",
+              "RelativeToolTip": "Project-2\\Warrior.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:54:57.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Player.h",
+              "RelativeDocumentMoniker": "Project-2\\Player.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Player.h",
+              "RelativeToolTip": "Project-2\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:54:40.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Map.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Map.h",
+              "RelativeDocumentMoniker": "Project-2\\Map.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Map.h",
+              "RelativeToolTip": "Project-2\\Map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:54:27.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Mage.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Mage.h",
+              "RelativeDocumentMoniker": "Project-2\\Mage.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Mage.h",
+              "RelativeToolTip": "Project-2\\Mage.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:54:11.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HeadlessZombie.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\HeadlessZombie.h",
+              "RelativeDocumentMoniker": "Project-2\\HeadlessZombie.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\HeadlessZombie.h",
+              "RelativeToolTip": "Project-2\\HeadlessZombie.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:54:05.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Game.h",
+              "RelativeDocumentMoniker": "Project-2\\Game.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Game.h",
+              "RelativeToolTip": "Project-2\\Game.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:53:28.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Entity.h",
+              "RelativeDocumentMoniker": "Project-2\\Entity.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Entity.h",
+              "RelativeToolTip": "Project-2\\Entity.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:53:01.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Enemy.h",
+              "RelativeDocumentMoniker": "Project-2\\Enemy.h",
+              "ToolTip": "C:\\Users\\abroust\\Documents\\GitHub\\Project2\\Project-2\\Enemy.h",
+              "RelativeToolTip": "Project-2\\Enemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T15:52:16.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

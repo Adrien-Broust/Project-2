@@ -3,6 +3,6 @@
 class Zombie : public Enemy
 {
 public:
-	void deplacerEnemy() override;
+	virtual void moveEnemy() override;
 };
 

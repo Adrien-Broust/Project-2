@@ -3,11 +3,14 @@
 class Player : public Entity
 {
 public:
-	void deplacer() override;
+	virtual bool move() = 0;
+	virtual bool canMove() = 0;
 
-	void collision() override;
+	virtual void damaged() = 0;
+	virtual bool isAlive() = 0;
 
-	virtual void deplacerPlayer() = 0;
+	virtual void movePlayer() = 0;
+
 private:
 	int x;
 	int y;
