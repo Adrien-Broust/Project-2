@@ -1,5 +1,6 @@
 #pragma once
 #include "Utilities.h"
+#include <iostream>
 class Entity
 {
 public:
