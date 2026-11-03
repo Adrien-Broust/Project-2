@@ -9,3 +9,4 @@ private:
 	vector2 posPlayer;
 };
 
+

@@ -4,7 +4,7 @@ class Warrior : public Player
 {
 	Warrior()
 	{
-		pv = 4;
+		//pv = 4;
 	}
 };
 

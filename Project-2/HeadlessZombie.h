@@ -3,7 +3,7 @@
 class HeadlessZombie : public Enemy
 {
 public:
-	bool move() override;
+	virtual void moveEnemy(vector2& character, int map[10][20]);
 };
 
 

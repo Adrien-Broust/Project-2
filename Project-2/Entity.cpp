@@ -1,7 +1,7 @@
 #include "Entity.h"
 #include "Map.h"
 
-void move(vector2& character, int dir, int map[10][20])
+void Entity::move(vector2& character, int dir, int map[10][20])
 {
     int newx = character.x;
     int newy = character.y;

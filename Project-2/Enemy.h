@@ -3,20 +3,8 @@
 class Enemy : public Entity 
 {
 public:
-
-	// Hérité via Entity
-	vector2 getDirection() override;
-
-	bool move() override;
-
-	bool canMove() override;
-
-	void onCollision() override;
-
-	void damaged() override;
-
-	bool isAlive() override;
-
+	//virtual void moveEnemy() = 0;
+	bool test();
 };
 
 

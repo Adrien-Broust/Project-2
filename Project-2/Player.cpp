@@ -5,7 +5,7 @@
 
 void Player::movePlayer(vector2& character, int map[10][20])
 {
-    char key = getch();
+    char key = _getch();
     int dir = -1;
     if (key == 'z' || key == 'Z') {
         dir = 0;
@@ -24,3 +24,4 @@ void Player::movePlayer(vector2& character, int map[10][20])
         move(character, dir, map);
     }
 }
+
