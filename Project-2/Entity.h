@@ -4,9 +4,8 @@
 class Entity
 {
 public:
-	vector2 pos;
 	int pv;
-
+	vector2 pos;
 public:
 	virtual vector2 getDirection() = 0;
 	virtual bool move() = 0;

@@ -2,8 +2,8 @@
 
 int main()
 {
-    Game* game;
-    void run();
+    Game game;
+    game.run();
     return 0;
 }
 

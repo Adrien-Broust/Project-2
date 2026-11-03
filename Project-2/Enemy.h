@@ -3,17 +3,20 @@
 class Enemy : public Entity 
 {
 public:
-	virtual bool move() = 0;
-	virtual bool canMove() = 0;
 
-	void damaged();
-	bool isAlive();
+	// Hérité via Entity
+	vector2 getDirection() override;
 
-	virtual void moveEnemy() = 0;
+	bool move() override;
 
-	
-private:
-	vector2 pos;
-	int pv = 1;
+	bool canMove() override;
+
+	void onCollision() override;
+
+	void damaged() override;
+
+	bool isAlive() override;
+
 };
+
 

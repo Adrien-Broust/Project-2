@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int Map::readMap(int map[10][20], int niveau, Entity* perso) {
+int Map::readMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 	string file;
 	if (niveau == 1) {
 		file = "Maps/Niveau1.txt";
@@ -16,17 +16,18 @@ int Map::readMap(int map[10][20], int niveau, Entity* perso) {
 	ifstream fichier(file);
 	if (fichier)
 	{
+		//switch
 		string ligne;
-		int en = 1;
+		int en = 0;
 		for (int y = 0; y < 10; ++y) {
 			getline(fichier, ligne);
-			for (int x = 0; x < 20; ++x) {
+			for (int x = 0; x < ligne.size(); ++x) {
 				if (ligne[x] == '.') {
 					map[y][x] = 0;
 				}
 				else if (ligne[x] == 'X') {
-					perso[en].pos.y = y;
-					perso[en].pos.x = x;
+					perso[en]->pos.y = y;
+					perso[en]->pos.x = x;
 					en++;
 				}
 				else if (ligne[x] == '~') {
@@ -37,22 +38,13 @@ int Map::readMap(int map[10][20], int niveau, Entity* perso) {
 				}
 				else if (ligne[x] == 'E') {
 					map[y][x] = 3;
-					perso[6].pos.y = y;
-					perso[6].pos.x = x;
 				}
 				else if (ligne[x] == 'H') {
-					perso[0].pos.y = y;
-					perso[0].pos.x = x;
+					perso[0]->pos.y = y;
+					perso[0]->pos.x = x;
+					en++;
 				}
 			}
-		}
-		if (en < 6) {
-			cout << "ERREUR: Le fichier ne contient pas assez de personnages ennemis." << endl;
-			return 1;
-		}
-		else if (en > 6) {
-			cout << "ERREUR: Le fichier contient trop de personnages ennemis." << endl;
-			return 1;
 		}
 	}
 	else
@@ -63,7 +55,7 @@ int Map::readMap(int map[10][20], int niveau, Entity* perso) {
 	return 0;
 }
 
-int Map::createMap(int map[10][20], int niveau, Entity* perso) {
+int Map::createMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 	if (niveau == 1) {
 		int lectureinvalide = readMap(map, niveau, perso);
 		if (lectureinvalide == 1) {
@@ -94,12 +86,12 @@ int Map::createMap(int map[10][20], int niveau, Entity* perso) {
 	return 0;
 }
 
-void Map::showMap(int map[10][20], Entity* perso) {
+void Map::showMap(int map[10][20], std::vector<Entity*>& perso) {
 	for (int y = 0; y < 10; ++y) {
 		for (int x = 0; x < 20; ++x) {
 			bool find = false;
 			for (int a = 0; a < 6; ++a) {
-				if (y == perso[a].pos.y && x == perso[a].pos.x) {
+				if (y == perso[a]->pos.y && x == perso[a]->pos.x) {
 					std::cout << "X";
 					find = true;
 					break;

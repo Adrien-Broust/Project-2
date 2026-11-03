@@ -3,17 +3,19 @@
 class Player : public Entity
 {
 public:
-	virtual bool move() = 0;
-	virtual bool canMove() = 0;
 
-	virtual void damaged() = 0;
-	virtual bool isAlive() = 0;
+	// Hérité via Entity
+	vector2 getDirection() override;
 
-	virtual void movePlayer() = 0;
+	bool move() override;
 
-private:
-	int x;
-	int y;
+	bool canMove() override;
+
+	void onCollision() override;
+
+	void damaged() override;
+
+	bool isAlive() override;
 
 };
 
