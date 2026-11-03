@@ -3,6 +3,7 @@
 class Player : public Entity
 {
 public:
+<<<<<<< Updated upstream
 
 	// Hérité via Entity
 	vector2 getDirection() override;
@@ -17,5 +18,14 @@ public:
 
 	bool isAlive() override;
 
+=======
+	bool move();
+	bool canMove(Player& player, int map[10][20]);
+	virtual void damaged() = 0;
+	void movePlayer(int map[10][20]);
+
+private:
+	vector2 posPlayer;
+>>>>>>> Stashed changes
 };
 
