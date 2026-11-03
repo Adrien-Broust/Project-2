@@ -1,2 +1,144 @@
-﻿  Map.cpp
-  Project-2.vcxproj -> C:\Users\obut\Documents\GitHub\Project-2\x64\Debug\Project-2.exe
+﻿  Enemy.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(8,10): error C3668: 'Enemy::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(18,7): error C3668: 'Enemy::isAlive' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.cpp(5,19): error C2512: 'vector2' : aucun constructeur par défaut approprié disponible
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.cpp(5,19): message : Aucun constructeur n'a pu prendre le type de source, ou la résolution de la surcharge du constructeur était ambiguë
+  Entity.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+  Game.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(8,10): error C3668: 'Enemy::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(18,7): error C3668: 'Enemy::isAlive' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(6,18): error C3668: 'Mage::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(9): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(11,3): error C2248: 'Entity::pv' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(18,6): message : voir la déclaration de 'Entity::pv'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Warrior.h(5): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Warrior.h(7,3): error C2248: 'Entity::pv' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(18,6): message : voir la déclaration de 'Entity::pv'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(8,23): error C2259: 'Player' : impossible d'instancier une classe abstraite
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(3,7): message : voir la déclaration de 'Player'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(8,23): message : à cause des membres suivants :
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(8,23): message : 'bool Entity::canMove(void)' : est abstrait
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(9,15): message : voir la déclaration de 'Entity::canMove'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(8,23): message : 'void Entity::onCollision(void)' : est abstrait
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(10,15): message : voir la déclaration de 'Entity::onCollision'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(8,23): message : 'void Player::damaged(void)' : est abstrait
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(8,15): message : voir la déclaration de 'Player::damaged'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(8,23): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Game.cpp(10,23): error C2280: 'Enemy::Enemy(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(20,1): message : le compilateur a généré 'Enemy::Enemy' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(20,1): message : 'Enemy::Enemy(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+  HeadlessZombie.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(8,10): error C3668: 'Enemy::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(18,7): error C3668: 'Enemy::isAlive' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+  Mage.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(6,18): error C3668: 'Mage::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(9): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(11,3): error C2248: 'Entity::pv' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(18,6): message : voir la déclaration de 'Entity::pv'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+  main.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(8,10): error C3668: 'Enemy::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(18,7): error C3668: 'Enemy::isAlive' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(6,18): error C3668: 'Mage::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(9): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Mage.h(11,3): error C2248: 'Entity::pv' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(18,6): message : voir la déclaration de 'Entity::pv'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Warrior.h(5): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Warrior.h(7,3): error C2248: 'Entity::pv' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(18,6): message : voir la déclaration de 'Entity::pv'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+  Map.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Map.cpp(29,15): error C2248: 'Entity::pos' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Map.cpp(30,15): error C2248: 'Entity::pos' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Map.cpp(43,14): error C2248: 'Entity::pos' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Map.cpp(44,14): error C2248: 'Entity::pos' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Map.cpp(94,22): error C2248: 'Entity::pos' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Map.cpp(94,46): error C2248: 'Entity::pos' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+  Player.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(13,39): error C2679: '==' binaire : aucun opérateur trouvé qui accepte un opérande de partie droite de type 'Map::Terrains' (ou il n'existe pas de conversion acceptable)
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(13,39): message : est peut-être 'built-in C++ operator==(int [20], int [20])'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(13,39): message : lors de la tentative de mise en correspondance de la liste des arguments '(int [20], Map::Terrains)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(35,5): error C2660: 'Player::canMove' : la fonction ne prend pas 1 arguments
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(6,14): message : voir la déclaration de 'Player::canMove'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(35,5): message : lors de la tentative de mise en correspondance de la liste des arguments '(int [][20])'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.cpp(21,16): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  Swimmer.cpp
+  Warrior.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Warrior.h(5): error C2280: 'Player::Player(void)' : tentative de référencement d'une fonction supprimée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : le compilateur a généré 'Player::Player' ici
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Player.h(13,1): message : 'Player::Player(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'Entity::Entity(void)'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(19,1): message : 'Entity::Entity(void)' : la fonction a été supprimée implicitement, car un données membres 'Entity::pos' n'a pas de constructeur par défaut approprié ou la résolution de surcharge est ambiguë
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(17,10): message : voir la déclaration de 'Entity::pos'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Warrior.h(7,3): error C2248: 'Entity::pv' : impossible d'accéder à private membre déclaré(e) dans la classe 'Entity'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(18,6): message : voir la déclaration de 'Entity::pv'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Entity.h(4,7): message : voir la déclaration de 'Entity'
+  Zombie.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(8,10): error C3668: 'Enemy::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(18,7): error C3668: 'Enemy::isAlive' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+  ZombieSwimmer.cpp
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(9,2): error C2535: 'vector2::vector2(int)' : fonction membre déjà définie ou déclarée
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Utilities.h(8,2): message : voir la déclaration de 'vector2::vector2'
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(8,10): error C3668: 'Enemy::getDirection' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+C:\Users\abroust\Documents\GitHub\Project-2\Project-2\Enemy.h(18,7): error C3668: 'Enemy::isAlive' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+  Génération de code en cours...

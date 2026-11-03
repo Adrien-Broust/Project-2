@@ -1,27 +1,39 @@
 #include "Entity.h"
+#include "Map.h"
 
-bool Entity::isAlive()
+void move(vector2& character, int dir, int map[10][20])
 {
-	return pv > 0;
-}
+    int newx = character.x;
+    int newy = character.y;
 
-vector2 Entity::getDirection(int dir)
-{
-    int newX = pos.x;
-    int newY = pos.y;
-
-    if (dir == 0) {
-        newY--;
+    if (dir == 0)
+    {
+        newy--;
     }
-    else if (dir == 1) {
-        newY++;
+    else if (dir == 1)
+    {
+        newy++;
     }
-    else if (dir == 2) {
-        newX--;
+    else if (dir == 2)
+    {
+        newx--;
     }
-    else if (dir == 3) {
-        newX++;
+    else if (dir == 3)
+    {
+        newx++;
     }
-    pos.x = newX;
-    pos.y = newY;
+    if (newx < 0 || newx >= 20 ||newy < 0 || newy >= 10)
+    {
+        return;
+    }
+    if (map[newy][newx] == Map::Terrains::Montagne)
+    {
+        return;
+    }
+    if (map[newy][newx] == Map::Terrains::Eau)
+    {
+        return;
+    }
+    character.x = newx;
+    character.y = newy;
 }
