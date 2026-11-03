@@ -5,7 +5,9 @@
 #include "ZombieSwimmer.h"
 #include "Mage.h"
 #include "Warrior.h"
+
 class Game
 {
-
+public:
+	void run();
 };

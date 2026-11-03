@@ -3,6 +3,7 @@
 class HeadlessZombie : public Enemy
 {
 public:
-	virtual void moveEnemy() override;
+	bool move() override;
 };
+
 

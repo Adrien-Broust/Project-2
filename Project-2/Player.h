@@ -3,17 +3,9 @@
 class Player : public Entity
 {
 public:
-	virtual bool move() = 0;
-	virtual bool canMove() = 0;
-
-	virtual void damaged() = 0;
-	virtual bool isAlive() = 0;
-
-	virtual void movePlayer() = 0;
+	void movePlayer(vector2& character, int map[10][20]);
 
 private:
-	int x;
-	int y;
-
+	vector2 posPlayer;
 };
 

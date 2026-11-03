@@ -1,20 +1,14 @@
 #pragma once
 #include "Utilities.h"
+#include <iostream>
 class Entity
 {
 public:
-	vector2 pos;
-	int pv;
-
-public:
-	virtual vector2 getDirection() = 0;
-	virtual bool move() = 0;
-	virtual bool canMove() = 0;
-	virtual void onCollision() = 0;
-
-	virtual void damaged() = 0;
-	virtual bool isAlive() = 0;
+	void move(vector2& character, int dir, int map[10][20]);
 
 	virtual ~Entity() = default;
+private:
+	vector2 pos;
+	int pv;
 };
 
