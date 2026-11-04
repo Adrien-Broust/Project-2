@@ -3,6 +3,6 @@
 class Zombie : public Enemy
 {
 public:
-	// move() override;
+	
 };
 
