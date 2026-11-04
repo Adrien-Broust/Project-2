@@ -3,7 +3,7 @@
 #include <conio.h>
 #include "Map.h"
 
-void Player::movePlayer(vector2& character, int map[10][20])
+void Player::movePlayer(Player& character, int map[10][20])
 {
     char key = _getch();
     int dir = -1;

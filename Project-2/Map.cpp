@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int Map::readMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
+int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player) {
 	string file;
 	if (niveau == 1) {
 		file = "Maps/Niveau1.txt";
@@ -28,6 +28,7 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 				else if (ligne[x] == 'X') {
 					perso[en]->pos.y = y;
 					perso[en]->pos.x = x;
+					perso[en]->pos.nom = "X";
 					en++;
 				}
 				else if (ligne[x] == '~') {
@@ -40,9 +41,9 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 					map[y][x] = 3;
 				}
 				else if (ligne[x] == 'H') {
-					perso[0]->pos.y = y;
-					perso[0]->pos.x = x;
-					en++;
+					player.pos.y = y;
+					player.pos.x = x;
+					player.pos.nom = "H";
 				}
 			}
 		}
@@ -55,9 +56,9 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 	return 0;
 }
 
-int Map::createMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
+int Map::createMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player) {
 	if (niveau == 1) {
-		int lectureinvalide = readMap(map, niveau, perso);
+		int lectureinvalide = readMap(map, niveau, perso, player);
 		if (lectureinvalide == 1) {
 			return 1;
 		}
@@ -66,7 +67,7 @@ int Map::createMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 		}
 	}
 	if (niveau == 2) {
-		int lectureinvalide = readMap(map, niveau, perso);
+		int lectureinvalide = readMap(map, niveau, perso, player);
 		if (lectureinvalide == 1) {
 			return 1;
 		}
@@ -75,7 +76,7 @@ int Map::createMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 		}
 	}
 	if (niveau == 3) {
-		int lectureinvalide = readMap(map, niveau, perso);
+		int lectureinvalide = readMap(map, niveau, perso, player);
 		if (lectureinvalide == 1) {
 			return 1;
 		}
@@ -86,13 +87,18 @@ int Map::createMap(int map[10][20], int niveau, std::vector<Entity*>& perso) {
 	return 0;
 }
 
-void Map::showMap(int map[10][20], std::vector<Entity*>& perso) {
+void Map::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
 	for (int y = 0; y < 10; ++y) {
 		for (int x = 0; x < 20; ++x) {
 			bool find = false;
-			for (int a = 0; a < 6; ++a) {
+			if (y == player.pos.y && x == player.pos.x) {
+				std::cout << player.pos.nom;
+			}
+			else 
+			{
+			for (int a = 0; a < 5; ++a) {
 				if (y == perso[a]->pos.y && x == perso[a]->pos.x) {
-					std::cout << "X";
+					std::cout << perso[a]->pos.nom;
 					find = true;
 					break;
 				}
@@ -110,6 +116,7 @@ void Map::showMap(int map[10][20], std::vector<Entity*>& perso) {
 			}
 			else if (map[y][x] == 3) {
 				std::cout << 'E';
+			}
 			}
 		}
 		std::cout << '\n';

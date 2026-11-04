@@ -1,7 +1,7 @@
 #include "HeadlessZombie.h"
 #include "Map.h"
 
-void HeadlessZombie::moveEnemy(vector2& character, int map[10][20]) {
+void HeadlessZombie::moveEnemy(Enemy& character, int map[10][20]) {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distrib(1, 4);

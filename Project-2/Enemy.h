@@ -1,10 +1,12 @@
 #pragma once
 #include "Entity.h"
+#include "Player.h"
 class Enemy : public Entity 
 {
 public:
-	virtual void moveEnemy(vector2& character, int map[10][20], std::vector<Entity*>& perso);
+	virtual void moveEnemy(Enemy& character, int map[10][20], Player& player);
 	bool test();
+	std::string nom = "X";
 };
 
 

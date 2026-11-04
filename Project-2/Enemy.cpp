@@ -5,10 +5,10 @@ bool Enemy::test()
 	return true;
 }
 
-void Enemy::moveEnemy(vector2& character, int map[10][20], std::vector<Entity*>& perso)
+void Enemy::moveEnemy(Enemy& character, int map[10][20], Player& player)
 {
-	int distancex = perso[0]->pos.x - character.x;
-	int distancey = perso[0]->pos.y - character.y;
+	int distancex = player.pos.x - character.pos.x;
+	int distancey = player.pos.y - character.pos.y;
 	int dir = -1;
 	if (distancex < distancey && distancex < 0){
 		dir = 3;

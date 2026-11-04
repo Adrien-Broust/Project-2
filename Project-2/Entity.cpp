@@ -1,10 +1,10 @@
 #include "Entity.h"
 #include "Map.h"
 
-void Entity::move(vector2& character, int dir, int map[10][20])
+void Entity::move(Entity& character, int dir, int map[10][20])
 {
-    int newx = character.x;
-    int newy = character.y;
+    int newx = character.pos.x;
+    int newy = character.pos.y;
 
     if (dir == 0)
     {
@@ -34,6 +34,6 @@ void Entity::move(vector2& character, int dir, int map[10][20])
     {
         return;
     }
-    character.x = newx;
-    character.y = newy;
+    character.pos.x = newx;
+    character.pos.y = newy;
 }

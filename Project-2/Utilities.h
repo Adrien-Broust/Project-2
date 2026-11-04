@@ -2,6 +2,7 @@
 #include <random>
 struct vector2
 {
+	std::string nom;
 	int x;
 	int y;
 

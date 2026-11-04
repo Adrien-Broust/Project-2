@@ -3,7 +3,7 @@
 class HeadlessZombie : public Enemy
 {
 public:
-	virtual void moveEnemy(vector2& character, int map[10][20]);
+	virtual void moveEnemy(Enemy& character, int map[10][20]);
 };
 
 

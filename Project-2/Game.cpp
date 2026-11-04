@@ -4,18 +4,21 @@
 void Game::run() {
 	Map maps;
 	int map[10][20] = {};
-	std::vector<Entity*> perso(6);
-	perso[0] = new Player();
-	for (int a = 1; a < 6; ++a) {
+	Player player;
+	std::vector<Enemy*> perso(5);
+	for (int a = 0; a < 5; ++a) {
 		perso[a] = new Enemy();
 	}
 	for (int niveau = 1; niveau < 4; ++niveau) {
-		std::cout << "Niveau " << niveau << " :" << "\n" << "\n";
-		int niveauinvalide = maps.createMap(map, niveau, perso);
-		if (niveauinvalide == 1) {
-			break;
+		while (player.pv) {
+			std::cout << "Niveau " << niveau << " :" << "\n" << "\n";
+			int niveauinvalide = maps.createMap(map, niveau, perso, player);
+			if (niveauinvalide == 1) {
+				break;
+			}
+			maps.showMap(map, perso, player);
+			player.movePlayer(player, map);
 		}
-		maps.showMap(map, perso);
 	}
 	std::cout << "\n" << "\n" << "FELICITATION !!!! VOUS AVEZ GAGNE !!!!";
 }
