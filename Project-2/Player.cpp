@@ -7,6 +7,9 @@ void Player::movePlayer(Player& character, int map[10][20])
 {
     char key = _getch();
     int dir = -1;
+    if (key == 'x' || key == 'X') {
+        std::cout<<"JE VEUX ARRETER !!!!!";
+    }
     if (key == 'z' || key == 'Z') {
         dir = 0;
     }

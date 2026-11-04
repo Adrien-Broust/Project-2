@@ -4,7 +4,7 @@
 class Entity
 {
 public:
-	virtual void move(Entity& character, int dir, int map[10][20]);
+	void move(Entity& character, int dir, int map[10][20]);
 
 	virtual ~Entity() = default;
 public:
