@@ -17,6 +17,10 @@ public:
 
 	bool isAlive() override;
 
+	vector2 getxenemy();
+	vector2 getYenemy();
+private:
+	vector2 posEnemy;
 };
 
 

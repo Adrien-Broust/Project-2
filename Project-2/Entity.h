@@ -4,11 +4,8 @@
 class Entity
 {
 public:
-	void move(vector2& character, int dir, int map[10][20]);
+	virtual void move(vector2& character, int dir, int map[10][20]);
 
 	virtual ~Entity() = default;
-private:
-	vector2 pos;
-	int pv;
 };
 

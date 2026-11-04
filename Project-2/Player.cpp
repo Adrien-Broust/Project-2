@@ -24,3 +24,13 @@ void Player::movePlayer(vector2& character, int map[10][20])
         move(character, dir, map);
     }
 }
+
+vector2 Player::getXplayer()
+{
+    return posPlayer.x;
+}
+
+vector2 Player::getYplayer()
+{
+    return posPlayer.y;
+}
