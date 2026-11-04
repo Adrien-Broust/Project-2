@@ -3,37 +3,37 @@
 
 void Entity::move(Entity& character, int dir, int map[10][20])
 {
-    int coorx = character.pos.x;
-    int coory = character.pos.y;
+    int newx = character.pos.x;
+    int newy = character.pos.y;
+
     if (dir == 0)
     {
-        character.pos.y--;
+        newy--;
     }
     else if (dir == 1)
     {
-        character.pos.y++;
+        newy++;
     }
     else if (dir == 2)
     {
-        character.pos.x--;
+        newx--;
     }
     else if (dir == 3)
     {
-        character.pos.x++;
+        newx++;
     }
-    if (character.pos.x < 0 || character.pos.x >= 20 || character.pos.y < 0 || character.pos.y >= 10)
+    if (newx < 0 || newx >= 20 ||newy < 0 || newy >= 10)
     {
-        character.pos.y = coory;
-        character.pos.x = coorx;
+        return;
     }
-    if (map[character.pos.y][character.pos.x] == Map::Terrains::Montagne)
+    if (map[newy][newx] == Map::Terrains::Montagne)
     {
-        character.pos.y = coory;
-        character.pos.x = coorx;
+        return;
     }
-    if (map[character.pos.y][character.pos.x] == Map::Terrains::Eau)
+    if (map[newy][newx] == Map::Terrains::Eau)
     {
-        character.pos.y = coory;
-        character.pos.x = coorx;
+        return;
     }
+    character.pos.x = newx;
+    character.pos.y = newy;
 }

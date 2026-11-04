@@ -10,7 +10,7 @@ void Enemy::moveEnemy(Enemy& character, int map[10][20], Player& player)
 	int distancex = player.pos.x - character.pos.x;
 	int distancey = player.pos.y - character.pos.y;
 	int dir = -1;
-	if (distancex < distancey && distancex < 0){
+	if (distancex < distancey && distancex < 0) {
 		dir = 3;
 	}
 	else if (distancex < distancey && distancex > 0) {
