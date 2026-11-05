@@ -1,12 +1,17 @@
 #pragma once
 #include "Entity.h"
+
 class Player : public Entity
 {
-public:
-	void movePlayer(vector2& character, int map[10][20]);
-	vector2 getXplayer();
-	vector2 getYplayer();
 private:
-	vector2 posPlayer;
+    int getDirectionFromKey(char key);
+    bool isPositionValid(int x, int y);
+    bool isTerrainAccessible(int x, int y, int map[10][20]);
+
+public:
+    void movePlayer(int map[10][20]);
+    void move(Entity& character, int dir, int map[10][20]) override;
+
+    int hp = 1;
 };
 

@@ -1,26 +1,13 @@
 #pragma once
 #include "Entity.h"
+#include "Player.h"
+
 class Enemy : public Entity 
 {
 public:
-
-	// Hérité via Entity
-	vector2 getDirection() override;
-
-	bool move() override;
-
-	bool canMove() override;
-
-	void onCollision() override;
-
-	void damaged() override;
-
-	bool isAlive() override;
-
-	vector2 getxenemy();
-	vector2 getYenemy();
-private:
-	vector2 posEnemy;
+	virtual void moveEnemy(Enemy& character, int map[10][20], Player& player) = 0;
+	bool test();
+	std::string nom = "X";
 };
 
 

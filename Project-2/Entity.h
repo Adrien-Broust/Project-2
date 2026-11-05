@@ -4,8 +4,12 @@
 class Entity
 {
 public:
-	virtual void move(vector2& character, int dir, int map[10][20]);
+	Entity() : pos{"", 0, 0} {}
+
+	virtual void move(Entity& character, int dir, int map[10][20]) = 0;
 
 	virtual ~Entity() = default;
+public:
+	vector2 pos;
 };
 
