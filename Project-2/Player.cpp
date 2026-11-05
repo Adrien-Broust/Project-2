@@ -16,20 +16,25 @@ int Player::getDirectionFromKey(char key)
     }
 }
 
-void Player::movePlayer(int map[10][20])
+int Player::movePlayer(int map[10][20])
 {
     char key = _getch();
 
     if (key == 'x' || key == 'X')
     {
-        return;
+        return 1;
     }
 
     int direction = getDirectionFromKey(key);
 
     if (direction != -1)
     {
-		move(*this, direction, map);
+		int Exit = move(*this, direction, map);
+        if (Exit == 1)
+        {
+			return 0;
+
+		}
     }
 }
 
@@ -43,7 +48,12 @@ bool Player::isTerrainAccessible(int x, int y, int map[10][20])
     return map[y][x] != Map::Montagne && map[y][x] != Map::Eau;
 }
 
-void Player::move(Entity& character, int dir, int map[10][20])
+bool Player::isExit(int x, int y, int map[10][20])
+{
+    return map[y][x] != Map::Sortie;
+}
+
+int Player::move(Entity& character, int dir, int map[10][20])
 {
     int newX = character.pos.x;
     int newY = character.pos.y;
@@ -54,20 +64,26 @@ void Player::move(Entity& character, int dir, int map[10][20])
     case 1: newY++; break;
     case 2: newX--; break;
     case 3: newX++; break;
-    default: return;
+    default: return 0;
     }
 
     if (!isPositionValid(newX, newY))
     {
-        return;
+        return 2;
     }
 
     if (!isTerrainAccessible(newX, newY, map))
     {
-		return;
+		return 2;
     }
-        
+
+    if (!isExit(newX, newY, map))
+    {
+        return 1;
+    }
 
     character.pos.x = newX;
     character.pos.y = newY;
+
+
 }

@@ -25,7 +25,7 @@ void HeadlessZombie::moveEnemy(Enemy& character, int map[10][20], Player& player
     }
 }
 
-void HeadlessZombie::move(Entity& character, int dir, int map[10][20])
+int HeadlessZombie::move(Entity& character, int dir, int map[10][20])
 {
     int newX = character.pos.x;
     int newY = character.pos.y;
@@ -44,7 +44,7 @@ void HeadlessZombie::move(Entity& character, int dir, int map[10][20])
         newX++;
         break;
     default:
-        return;
+        return 0;
     }
     if (newX >= 0 && newX < 20 && newY >= 0 && newY < 10)
     {

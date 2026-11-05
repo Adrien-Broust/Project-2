@@ -23,7 +23,17 @@ void Game::run() {
 			std::cout << "Niveau " << niveau << " :\n\n";
 
 			maps.showMap(map, perso, player);
-			player.movePlayer(map);
+			int result = player.movePlayer(map);
+			if (result == 0)
+			{
+				std::cout << "Bravo";
+				break;
+			}
+			else if (result == 1)
+			{
+				std::cout << "Nul";
+				break;
+			}
 		}
 	}
 	std::cout << "\n" << "\n" << "FELICITATION !!!! VOUS AVEZ GAGNE !!!!";
