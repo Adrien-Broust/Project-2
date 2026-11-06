@@ -1,7 +1,8 @@
 #include "Entity.h"
 #include "Map.h"
 
-bool Entity::isAlive(Entity& character) {
+bool Entity::isAlive(Entity& character) 
+{
 	return character.hp > 0;
 }
 
