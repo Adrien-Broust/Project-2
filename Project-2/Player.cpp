@@ -1,8 +1,6 @@
 #include "Player.h"
-#include <Windows.h>
-#include <conio.h>
 #include "Map.h"
-
+#include <conio.h>
 
 int Player::getDirectionFromKey(char key)
 {
@@ -36,16 +34,6 @@ int Player::movePlayer(int map[10][20])
 
 		}
     }
-}
-
-bool Player::isPositionValid(int x, int y)
-{
-    return x >= 0 && x < 20 && y >= 0 && y < 10;
-}
-
-bool Player::isTerrainAccessible(int x, int y, int map[10][20])
-{
-    return map[y][x] != Map::Montagne && map[y][x] != Map::Eau;
 }
 
 bool Player::isExit(int x, int y, int map[10][20])
@@ -84,6 +72,4 @@ int Player::move(Entity& character, int dir, int map[10][20])
 
     character.pos.x = newX;
     character.pos.y = newY;
-
-
 }

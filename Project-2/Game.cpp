@@ -1,6 +1,7 @@
 #include "Game.h"
-#include "HeadlessZombie.h"
+#include "Zombie.h"
 #include <vector>
+#include <iostream>
 
 void Game::run() {
 	Map maps;
@@ -24,6 +25,9 @@ void Game::run() {
 
 			maps.showMap(map, perso, player);
 			int result = player.movePlayer(map);
+			for (int a = 0; a < 5; ++a) {
+				perso[a]->moveEnemy(*perso[a], map, player);
+			}
 			if (result == 0)
 			{
 				std::cout << "Bravo";
@@ -32,7 +36,7 @@ void Game::run() {
 			else if (result == 1)
 			{
 				std::cout << "Nul";
-				break;
+				player.hp = 0;
 			}
 		}
 	}
