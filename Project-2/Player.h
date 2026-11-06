@@ -1,6 +1,8 @@
 #pragma once
 #include "Entity.h"
 
+class Enemy;
+
 class Player : public Entity
 {
 private:
@@ -11,7 +13,7 @@ private:
 public:
     void movePlayer(int map[10][20]);
     void move(Entity& character, int dir, int map[10][20]) override;
-
-    int hp = 1;
+    void OnCollision(std::vector<Enemy*> target);
+    int PlayerHp = 1;
 };
 

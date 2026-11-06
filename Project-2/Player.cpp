@@ -1,5 +1,4 @@
 #include "Player.h"
-#include <Windows.h>
 #include <conio.h>
 #include "Map.h"
 
@@ -70,4 +69,15 @@ void Player::move(Entity& character, int dir, int map[10][20])
 
     character.pos.x = newX;
     character.pos.y = newY;
+}
+
+void Player::OnCollision(std::vector<Enemy*> target)
+{
+    size_t size = target.size();
+    for (int i = 0; i < size; i++) {
+        if (target[i]->pos.x == pos.x && target[i]->pos.y == pos.y) {
+            PlayerHp--;
+            break;
+        }
+    }
 }

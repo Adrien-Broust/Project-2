@@ -5,7 +5,7 @@
 void Game::run() {
 	Map maps;
 	int map[10][20] = {};
-	Player player;
+	Warrior player;
 	std::vector<Enemy*> perso(5);
 	for (int a = 0; a < 5; ++a) {
 		perso[a] = new HeadlessZombie();
@@ -16,14 +16,15 @@ void Game::run() {
 		if (niveauinvalide == 1)
 			break;
 
-		while (player.hp)
+		while (player.PlayerHp)
 		{
 			system("cls");
 
-			std::cout << "Niveau " << niveau << " :\n\n";
+			std::cout << "Niveau " << niveau << " :\n\n" << "PV" << " :" << player.PlayerHp << "\n\n";
 
 			maps.showMap(map, perso, player);
 			player.movePlayer(map);
+			player.OnCollision(perso);
 		}
 	}
 	std::cout << "\n" << "\n" << "FELICITATION !!!! VOUS AVEZ GAGNE !!!!";
