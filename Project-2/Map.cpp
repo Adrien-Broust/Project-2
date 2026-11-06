@@ -1,7 +1,67 @@
 #include "Map.h"
+#include "Zombie.h"
+#include "ZombieSwimmer.h"
+#include "HeadlessZombie.h"
 #include <iostream>
 
 using namespace std;
+
+void chooseZombie(std::vector<Enemy*>& perso, int en, int y, int x)
+{
+	perso[en] = new Zombie();
+	perso[en]->pos.y = y;
+	perso[en]->pos.x = x;
+	perso[en]->pos.name = "X";
+	en++;
+}
+
+void chooseHeadlessZombie(std::vector<Enemy*>& perso, int en, int y, int x)
+{
+	perso[en] = new HeadlessZombie();
+	perso[en]->pos.y = y;
+	perso[en]->pos.x = x;
+	perso[en]->pos.name = "O";
+	en++;
+}
+
+void chooseZombieSwimmer(std::vector<Enemy*>& perso, int en, int y, int x)
+{
+	perso[en] = new ZombieSwimmer();
+	perso[en]->pos.y = y;
+	perso[en]->pos.x = x;
+	perso[en]->pos.name = "S";
+	en++;
+}
+
+void chooseTiles(int map[10][20], int en, int y, int x, int ligne[], Player& player, std::vector<Enemy*>& perso)
+{
+	if (ligne[x] == '.') {
+		map[y][x] = 0;
+	}
+	else if (ligne[x] == 'X') {
+		chooseZombie(perso, en, y, x);
+	}
+	else if (ligne[x] == 'O') {
+		chooseHeadlessZombie(perso, en, y, x);
+	}
+	else if (ligne[x] == 'S') {
+		chooseZombieSwimmer(perso, en, y, x);
+	}
+	else if (ligne[x] == '~') {
+		map[y][x] = 1;
+	}
+	else if (ligne[x] == 'A') {
+		map[y][x] = 2;
+	}
+	else if (ligne[x] == 'E') {
+		map[y][x] = 3;
+	}
+	else if (ligne[x] == 'H') {
+		player.pos.y = y;
+		player.pos.x = x;
+		player.pos.name = "H";
+	}
+}
 
 int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player) {
 	string file;
@@ -17,7 +77,6 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player
 	ifstream fichier(file);
 	if (fichier)
 	{
-		//switch
 		string ligne;
 		int en = 0;
 		for (int y = 0; y < 10; ++y) {
@@ -27,6 +86,7 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player
 					map[y][x] = 0;
 				}
 				else if (ligne[x] == 'X') {
+					perso[en] = new Zombie();
 					perso[en]->pos.y = y;
 					perso[en]->pos.x = x;
 					perso[en]->pos.name = "X";

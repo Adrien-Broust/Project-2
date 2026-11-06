@@ -17,17 +17,17 @@ int Enemy::getDirection(Enemy& character, int map[10][20], Player& player)
 {
 	int distancex = player.pos.x - character.pos.x;
 	int distancey = player.pos.y - character.pos.y;
-	if (distancex < distancey && distancex < 0) {
-		return 3;
+	if (distancey > 0 && abs(distancey) >= abs(distancex)) {
+		return 1 ;
 	}
-	else if (distancex < distancey && distancex > 0) {
+	else if (distancey < 0 && abs(distancey) > abs(distancex)) {
+		return 0 ;
+	}
+	else if (distancex < 0 && abs(distancex) >= abs(distancey)) {
 		return 2;
 	}
-	else if (distancey < distancex && distancey < 0) {
-		return 1;
-	}
-	else if (distancey < distancex && distancey > 0) {
-		return 0;
+	else if (distancex > 0 && abs(distancex) > abs(distancey)) {
+		return 3;
 	}
 }
 

@@ -9,5 +9,6 @@
 class Game
 {
 public:
+	Player choosecharacter();
 	void run();
 };
