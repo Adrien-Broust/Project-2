@@ -16,7 +16,7 @@ void Game::run() {
 		if (niveauinvalide == 1)
 			break;
 
-		while (player.PlayerHp)
+		while (player.PlayerHp > 0)
 		{
 			system("cls");
 
@@ -25,6 +25,11 @@ void Game::run() {
 			maps.showMap(map, perso, player);
 			player.movePlayer(map);
 			player.OnCollision(perso);
+		}
+		if(player.PlayerHp <= 0)
+		{
+			std::cout << "\n" << "\n" << "VOUS AVEZ PERDU !!!!";
+			break;
 		}
 	}
 	std::cout << "\n" << "\n" << "FELICITATION !!!! VOUS AVEZ GAGNE !!!!";

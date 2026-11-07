@@ -73,10 +73,13 @@ void Player::move(Entity& character, int dir, int map[10][20])
 
 void Player::OnCollision(std::vector<Enemy*> target)
 {
-    size_t size = target.size();
-    for (int i = 0; i < size; i++) {
-        if (target[i]->pos.x == pos.x && target[i]->pos.y == pos.y) {
+    for (auto i = target.begin(); i != target.end(); i++)
+    {
+        if ((*i)->pos.x == pos.x && (*i)->pos.y == pos.y)
+        {
             PlayerHp--;
+			delete* i;
+			target.erase(i);
             break;
         }
     }
