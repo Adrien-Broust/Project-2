@@ -18,12 +18,6 @@ int Player::getDirectionFromKey(char key)
 void Player::movePlayer(int map[10][20])
 {
     char key = _getch();
-
-    if (key == 'x' || key == 'X')
-    {
-        return;
-    }
-
     int direction = getDirectionFromKey(key);
 
     if (direction != -1)
