@@ -25,6 +25,10 @@ void Game::run() {
 			maps.showMap(map, perso, player);
 			player.movePlayer(map);
 			player.OnCollision(perso);
+			for (int i = 0; i < perso.size() ; i++)
+			{
+				perso[i]->moveEnemy(*perso[i], map, player);
+			}
 		}
 		if(player.PlayerHp <= 0)
 		{
