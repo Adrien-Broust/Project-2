@@ -73,3 +73,5 @@ int Player::move(Entity& character, int dir, int map[10][20])
     character.pos.x = newX;
     character.pos.y = newY;
 }
+
+

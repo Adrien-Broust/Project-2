@@ -7,7 +7,7 @@ public:
 	void Collision(std::vector<Entity*>& target);
 	int getPv();
 	void setPv(int value);
-private:
+	int hp = 4;
 	int pv = 4;
 };
 

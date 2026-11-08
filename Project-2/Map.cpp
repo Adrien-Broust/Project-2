@@ -163,49 +163,16 @@ int Map::createMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Play
 	}
 }
 
-void Map::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) 
+void Map::OnCollision(std::vector<Enemy*> target, Player& player)
 {
-	for (int y = 0; y < 10; ++y) 
+	for (auto i = target.begin(); i != target.end(); i++)
 	{
-		for (int x = 0; x < 20; ++x) 
+		if ((*i)->pos.x == player.pos.x && (*i)->pos.y == player.pos.y)
 		{
-			bool find = false;
-			if (y == player.pos.y && x == player.pos.x) 
-			{
-				std::cout << player.pos.name;
-				find = true;
-			}
-			else
-			{
-				for (int a = 0; a < 5; ++a)
-				{
-					if (y == perso[a]->pos.y && x == perso[a]->pos.x)
-					{
-						std::cout << perso[a]->pos.name;
-						find = true;
-						break;
-					}
-				}
-				if (find)
-					continue;
-				else if (map[y][x] == 0)
-				{
-					std::cout << '.';
-				}
-				else if (map[y][x] == 1)
-				{
-					std::cout << '~';
-				}
-				else if (map[y][x] == 2)
-				{
-					std::cout << 'A';
-				}
-				else if (map[y][x] == 3)
-				{
-					std::cout << 'E';
-				}
-			}
+			player.hp--;
+			delete* i;
+			target.erase(i);
+			break;
 		}
-		std::cout << '\n';
 	}
 }
