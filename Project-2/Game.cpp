@@ -2,7 +2,11 @@
 #include "HeadlessZombie.h"
 #include <vector>
 
-void Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
+int Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
+	if (map[player.pos.y][player.pos.x] == 3)
+	{
+		return 1;
+	}
 	for (int y = 0; y < 10; ++y) {
 		for (int x = 0; x < 20; ++x) {
 			bool find = false;
@@ -37,6 +41,7 @@ void Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) 
 		}
 		std::cout << '\n';
 	}
+	return 0;
 }
 
 void Game::run() {
@@ -59,7 +64,11 @@ void Game::run() {
 
 			std::cout << "Niveau " << niveau << " :\n\n" << "PV" << " :" << player.PlayerHp << "\n\n";
 
-			showMap(map, perso, player);
+			int isExit = showMap(map, perso, player);
+			if (isExit == 1)
+			{
+				break;
+			}
 			int movevalide = player.movePlayer(map);
 			if (movevalide == 1)
 			{
