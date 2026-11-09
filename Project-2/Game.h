@@ -9,5 +9,6 @@
 class Game
 {
 public:
+	void showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player);
 	void run();
 };

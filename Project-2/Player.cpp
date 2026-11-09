@@ -15,14 +15,18 @@ int Player::getDirectionFromKey(char key)
     }
 }
 
-void Player::movePlayer(int map[10][20])
+int Player::movePlayer(int map[10][20])
 {
     char key = _getch();
     int direction = getDirectionFromKey(key);
-
+    if (key == 'x' || key == 'X')
+    {
+        return 1;
+    }
     if (direction != -1)
     {
 		move(*this, direction, map);
+        return 0;
     }
 }
 
@@ -52,12 +56,12 @@ void Player::move(Entity& character, int dir, int map[10][20])
 
     if (!isPositionValid(newX, newY))
     {
-        return;
+        return ;
     }
 
     if (!isTerrainAccessible(newX, newY, map))
     {
-		return;
+		return ;
     }
         
 
@@ -72,8 +76,7 @@ void Player::OnCollision(std::vector<Enemy*> target)
         if ((*i)->pos.x == pos.x && (*i)->pos.y == pos.y)
         {
             PlayerHp--;
-			delete* i;
-			target.erase(i);
+            (*i)->hp--;
             break;
         }
     }

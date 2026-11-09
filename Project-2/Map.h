@@ -20,6 +20,5 @@ public:
 	};
 	int readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player);
 	int createMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player);
-	void showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player);
 };
 

@@ -11,8 +11,8 @@ private:
     bool isTerrainAccessible(int x, int y, int map[10][20]);
 
 public:
-    void movePlayer(int map[10][20]);
-    void move(Entity& character, int dir, int map[10][20]) override;
+    int movePlayer(int map[10][20]);
+    void move(Entity& character, int dir, int map[10][20]);
     void OnCollision(std::vector<Enemy*> target);
     int PlayerHp = 1;
 };

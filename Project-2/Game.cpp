@@ -2,6 +2,43 @@
 #include "HeadlessZombie.h"
 #include <vector>
 
+void Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
+	for (int y = 0; y < 10; ++y) {
+		for (int x = 0; x < 20; ++x) {
+			bool find = false;
+			if (y == player.pos.y && x == player.pos.x) {
+				std::cout << player.pos.name;
+				find = true;
+			}
+			else
+			{
+				for (int a = 0; a < 5; ++a) {
+					if (y == perso[a]->pos.y && x == perso[a]->pos.x && perso[a]->hp > 0) {
+						std::cout << perso[a]->pos.name;
+						find = true;
+						break;
+					}
+				}
+				if (find)
+					continue;
+				else if (map[y][x] == 0) {
+					std::cout << '.';
+				}
+				else if (map[y][x] == 1) {
+					std::cout << '~';
+				}
+				else if (map[y][x] == 2) {
+					std::cout << 'A';
+				}
+				else if (map[y][x] == 3) {
+					std::cout << 'E';
+				}
+			}
+		}
+		std::cout << '\n';
+	}
+}
+
 void Game::run() {
 	Map maps;
 	int map[10][20] = {};
@@ -22,10 +59,14 @@ void Game::run() {
 
 			std::cout << "Niveau " << niveau << " :\n\n" << "PV" << " :" << player.PlayerHp << "\n\n";
 
-			maps.showMap(map, perso, player);
-			player.movePlayer(map);
+			showMap(map, perso, player);
+			int movevalide = player.movePlayer(map);
+			if (movevalide == 1)
+			{
+				player.PlayerHp = 0;
+			}
 			player.OnCollision(perso);
-			for (int i = 0; i < perso.size() ; i++)
+			for (int i = 0; i < 5 ; i++)
 			{
 				perso[i]->moveEnemy(*perso[i], map, player);
 			}
