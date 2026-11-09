@@ -1,4 +1,7 @@
 #include "Map.h"
+#include "Zombie.h"
+#include "HeadlessZombie.h"
+#include "ZombieSwimmer.h"
 #include <iostream>
 
 using namespace std;
@@ -27,6 +30,7 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player
 					map[y][x] = 0;
 				}
 				else if (ligne[x] == 'X') {
+					perso[en] = new HeadlessZombie();
 					perso[en]->pos.y = y;
 					perso[en]->pos.x = x;
 					perso[en]->pos.name = "X";
@@ -57,34 +61,14 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player
 	return 0;
 }
 
-int Map::createMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player) {
-	if (niveau == 1) {
-		int lectureinvalide = readMap(map, niveau, perso, player);
-		if (lectureinvalide == 1) {
-			return 1;
-		}
-		else {
-			return 0;
-		}
+int Map::createMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player& player)
+{
+	int lectureinvalide = readMap(map, niveau, perso, player);
+	if (lectureinvalide == 1) {
+		return 1;
 	}
-	if (niveau == 2) {
-		int lectureinvalide = readMap(map, niveau, perso, player);
-		if (lectureinvalide == 1) {
-			return 1;
-		}
-		else {
-			return 0;
-		}
+	else {
+		return 0;
 	}
-	if (niveau == 3) {
-		int lectureinvalide = readMap(map, niveau, perso, player);
-		if (lectureinvalide == 1) {
-			return 1;
-		}
-		else {
-			return 0;
-		}
-	}
-	return 0;
 }
 

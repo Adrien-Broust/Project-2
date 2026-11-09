@@ -49,9 +49,6 @@ void Game::run() {
 	int map[10][20] = {};
 	Warrior player;
 	std::vector<Enemy*> perso(5);
-	for (int a = 0; a < 5; ++a) {
-		perso[a] = new HeadlessZombie();
-	}
 	for (int niveau = 1; niveau < 4; ++niveau) {
 		int niveauinvalide = maps.createMap(map, niveau, perso, player);
 

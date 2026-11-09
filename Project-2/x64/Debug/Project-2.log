@@ -1,2 +1,15 @@
-﻿  Game.cpp
-  Project-2.vcxproj -> C:\Users\obut\Documents\GitHub\Project-2\x64\Debug\Project-2.exe
+﻿  Enemy.cpp
+  Entity.cpp
+  Game.cpp
+  HeadlessZombie.cpp
+  Mage.cpp
+  Map.cpp
+  Player.cpp
+  Swimmer.cpp
+  Warrior.cpp
+  Zombie.cpp
+  ZombieSwimmer.cpp
+  main.cpp
+  Generating Code...
+C:\Users\theol\OneDrive\Documents\GitHub\Project-2\Project-2\Player.cpp(31,1): warning C4715: 'Player::movePlayer': not all control paths return a value
+  Project-2.vcxproj -> C:\Users\theol\OneDrive\Documents\GitHub\Project-2\x64\Debug\Project-2.exe
