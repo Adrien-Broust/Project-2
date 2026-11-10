@@ -23,7 +23,6 @@ void Game::spell(std::vector<Enemy*> perso, Player& player)
 		}
 	}
 }
-
 int Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
 	if (map[player.pos.y][player.pos.x] == 3)
 	{
@@ -70,6 +69,7 @@ void Game::run() {
 	Map maps;
 	int map[10][20] = {};
 	Mage player;
+	int victories = 0;
 	std::vector<Enemy*> perso(5);
 	for (int niveau = 1; niveau < 4; ++niveau) {
 		int niveauinvalide = maps.createMap(map, niveau, perso, player);
@@ -86,6 +86,7 @@ void Game::run() {
 			int isExit = showMap(map, perso, player);
 			if (isExit == 1)
 			{
+				victories += 1;
 				break;
 			}
 			int movevalide = player.movePlayer(map);
@@ -97,9 +98,12 @@ void Game::run() {
 			{
 				spell(perso,player);
 			}
-			for (int i = 0; i < 5 ; i++)
+			for (int i = 0; i < 5; i++)
 			{
+				if (perso[i]->hp > 0)
+				{
 				perso[i]->moveEnemy(*perso[i], map, player);
+				}
 			}
 			player.OnCollision(perso);
 		}
@@ -109,5 +113,8 @@ void Game::run() {
 			break;
 		}
 	}
-	std::cout << "\n" << "\n" << "FELICITATION !!!! VOUS AVEZ GAGNE !!!!";
+	if (victories == 3)
+	{
+		std::cout << "\n" << "\n" << "FELICITATION !!!! VOUS AVEZ GAGNE !!!!";
+	}
 }

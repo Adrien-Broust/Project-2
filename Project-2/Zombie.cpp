@@ -4,18 +4,18 @@
 void Zombie::moveEnemy(Enemy& character, int map[10][20], Player& player) {
 	int distancex = player.pos.x - character.pos.x;
 	int distancey = player.pos.y - character.pos.y;
-	int movement;
+	int movement = -1;
 	if (distancey > 0 && abs(distancey) >= abs(distancex)) {
-		movement = 1;
-	}
-	else if (distancey < 0 && abs(distancey) > abs(distancex)) {
 		movement = 0;
 	}
-	else if (distancex < 0 && abs(distancex) >= abs(distancey)) {
-		movement = 2;
+	else if (distancey < 0 && abs(distancey) >= abs(distancex)) {
+		movement = 1;
 	}
-	else if (distancex > 0 && abs(distancex) > abs(distancey)) {
+	else if (distancex < 0 && abs(distancex) >= abs(distancey)) {
 		movement = 3;
+	}
+	else if (distancex > 0 && abs(distancex) >= abs(distancey)) {
+		movement = 2;
 	}
     int dir = -1;
     if (movement == 1) {

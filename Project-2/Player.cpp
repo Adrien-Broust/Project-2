@@ -73,7 +73,7 @@ void Player::OnCollision(std::vector<Enemy*> target)
 {
     for (auto i = target.begin(); i != target.end(); i++)
     {
-        if ((*i)->pos.x == pos.x && (*i)->pos.y == pos.y)
+        if ((*i)->pos.x == pos.x && (*i)->pos.y == pos.y && (*i)->hp > 0)
         {
             PlayerHp--;
             (*i)->hp--;
