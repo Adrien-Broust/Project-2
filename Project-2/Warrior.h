@@ -2,9 +2,10 @@
 #include "Player.h"
 class Warrior : public Player
 {
+public:
 	Warrior()
 	{
-		pv = 4;
+		PlayerHp = 4;
 	}
 };
 
