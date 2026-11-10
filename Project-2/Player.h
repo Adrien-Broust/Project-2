@@ -11,9 +11,10 @@ private:
 
 public:
     int getDirectionFromKey(char key);
-    virtual int movePlayer(int map[10][20]);
+    virtual int movePlayer(int map[10][20], std::vector<Enemy*> perso);
     void move(Entity& character, int dir, int map[10][20]);
     void OnCollision(std::vector<Enemy*> target);
+	virtual void OnUpdate(int map[10][20], std::vector<Enemy*> enemies);
     int PlayerHp = 1;
 };
 

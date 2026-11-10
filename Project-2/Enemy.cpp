@@ -31,3 +31,12 @@ void Enemy::move(Entity& character, int dir, int map[10][20])
         }
     }
 }
+
+void Enemy::OnCollision(Player& target)
+{
+    if (pos.x == target.pos.x && pos.y == target.pos.y)
+    {
+        target.PlayerHp--;
+        hp--;
+	}
+}

@@ -15,7 +15,7 @@ int Player::getDirectionFromKey(char key)
     }
 }
 
-int Player::movePlayer(int map[10][20])
+int Player::movePlayer(int map[10][20], std::vector<Enemy*> perso)
 {
     char key = _getch();
     int direction = getDirectionFromKey(key);
@@ -80,4 +80,10 @@ void Player::OnCollision(std::vector<Enemy*> target)
             break;
         }
     }
+}
+
+void Player::OnUpdate(int map[10][20], std::vector<Enemy*> enemies)
+{
+	movePlayer(map, enemies);
+	OnCollision(enemies);
 }

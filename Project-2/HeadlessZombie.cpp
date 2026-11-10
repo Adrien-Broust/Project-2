@@ -24,3 +24,9 @@ void HeadlessZombie::moveEnemy(Enemy& character, int map[10][20], Player& player
         move(character, dir, map);
     }
 }
+
+void HeadlessZombie::OnUpdate(int map[10][20], Player& player)
+{
+	moveEnemy(*this, map, player);
+    OnCollision(player);
+}

@@ -1,28 +1,7 @@
 #include "Game.h"
 #include <vector>
 
-void Game::spell(std::vector<Enemy*> perso, Player& player)
-{
-	for (auto i = perso.begin(); i != perso.end(); i++)
-	{
-		if ((*i)->pos.x == player.pos.x - 1 && (*i)->pos.y == player.pos.y)
-		{
-			(*i)->hp--;
-		}
-		else if ((*i)->pos.x == player.pos.x + 1 && (*i)->pos.y == player.pos.y)
-		{
-			(*i)->hp--;
-		}
-		else if ((*i)->pos.x == player.pos.x && (*i)->pos.y == player.pos.y - 1)
-		{
-			(*i)->hp--;
-		}
-		else if ((*i)->pos.x == player.pos.x && (*i)->pos.y == player.pos.y + 1)
-		{
-			(*i)->hp--;
-		}
-	}
-}
+
 int Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
 	if (map[player.pos.y][player.pos.x] == 3)
 	{
@@ -73,7 +52,6 @@ void Game::run() {
 	std::vector<Enemy*> perso(5);
 	for (int niveau = 1; niveau < 4; ++niveau) {
 		int niveauinvalide = maps.createMap(map, niveau, perso, player);
-
 		if (niveauinvalide == 1)
 			break;
 
@@ -89,23 +67,14 @@ void Game::run() {
 				victories += 1;
 				break;
 			}
-			int movevalide = player.movePlayer(map);
-			if (movevalide == 1)
-			{
-				player.PlayerHp = 0;
-			}
-			if (movevalide == 2)
-			{
-				spell(perso,player);
-			}
+			player.OnUpdate(map, perso);
 			for (int i = 0; i < 5; i++)
 			{
 				if (perso[i]->hp > 0)
 				{
-				perso[i]->moveEnemy(*perso[i], map, player);
+				perso[i]->OnUpdate(map, player);
 				}
 			}
-			player.OnCollision(perso);
 		}
 		if(player.PlayerHp <= 0)
 		{

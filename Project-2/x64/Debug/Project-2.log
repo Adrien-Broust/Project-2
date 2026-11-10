@@ -1,13 +1,2 @@
-﻿  Enemy.cpp
-  Game.cpp
-  HeadlessZombie.cpp
-  Mage.cpp
-  Map.cpp
-  Player.cpp
-  Zombie.cpp
-  ZombieSwimmer.cpp
-  main.cpp
-  Génération de code en cours...
-C:\Users\obut\Documents\GitHub\Project-2\Project-2\Player.cpp(31): warning C4715: 'Player::movePlayer' : les chemins de contrôle ne retournent pas tous une valeur
-C:\Users\obut\Documents\GitHub\Project-2\Project-2\Mage.cpp(22): warning C4715: 'Mage::movePlayer' : les chemins de contrôle ne retournent pas tous une valeur
-  Project-2.vcxproj -> C:\Users\obut\Documents\GitHub\Project-2\x64\Debug\Project-2.exe
+﻿  Game.cpp
+  Project-2.vcxproj -> C:\Users\brous\Documents\GitHub\Project-2\x64\Debug\Project-2.exe
