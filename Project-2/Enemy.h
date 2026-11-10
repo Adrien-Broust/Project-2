@@ -1,19 +1,17 @@
 #pragma once
 #include "Entity.h"
+
+class Player;
+
 class Enemy : public Entity 
 {
 public:
-	virtual bool move() = 0;
-	virtual bool canMove() = 0;
-
-	void damaged();
-	bool isAlive();
-
-	virtual void moveEnemy() = 0;
-
-	
-private:
-	vector2 pos;
-	int pv = 1;
+	virtual void moveEnemy(Enemy& character, int map[10][20], Player& player) = 0;
+	virtual void move(Entity& character, int dir, int map[10][20]) override;
+	void OnCollision(Player& target);
+	virtual void OnUpdate(int map[10][20], Player& player) = 0;
+	std::string nom = "X";
+	int hp = 1;
 };
+
 
