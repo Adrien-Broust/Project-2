@@ -1,12 +1,8 @@
 ﻿  Enemy.cpp
-  Entity.cpp
   Game.cpp
   HeadlessZombie.cpp
-  Mage.cpp
   Map.cpp
   Player.cpp
-  Swimmer.cpp
-  Warrior.cpp
   Zombie.cpp
   ZombieSwimmer.cpp
   main.cpp
