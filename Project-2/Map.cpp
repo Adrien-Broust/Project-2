@@ -36,6 +36,13 @@ int Map::readMap(int map[10][20], int niveau, std::vector<Enemy*>& perso, Player
 					perso[en]->pos.name = "X";
 					en++;
 				}
+				else if (ligne[x] == 'Z') {
+					perso[en] = new Zombie();
+					perso[en]->pos.y = y;
+					perso[en]->pos.x = x;
+					perso[en]->pos.name = "X";
+					en++;
+				}
 				else if (ligne[x] == '~') {
 					map[y][x] = 1;
 				}

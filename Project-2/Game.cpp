@@ -1,6 +1,28 @@
 #include "Game.h"
-#include "HeadlessZombie.h"
 #include <vector>
+
+void Game::spell(std::vector<Enemy*> perso, Player& player)
+{
+	for (auto i = perso.begin(); i != perso.end(); i++)
+	{
+		if ((*i)->pos.x == player.pos.x - 1 && (*i)->pos.y == player.pos.y)
+		{
+			(*i)->hp--;
+		}
+		else if ((*i)->pos.x == player.pos.x + 1 && (*i)->pos.y == player.pos.y)
+		{
+			(*i)->hp--;
+		}
+		else if ((*i)->pos.x == player.pos.x && (*i)->pos.y == player.pos.y - 1)
+		{
+			(*i)->hp--;
+		}
+		else if ((*i)->pos.x == player.pos.x && (*i)->pos.y == player.pos.y + 1)
+		{
+			(*i)->hp--;
+		}
+	}
+}
 
 int Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
 	if (map[player.pos.y][player.pos.x] == 3)
@@ -47,7 +69,7 @@ int Game::showMap(int map[10][20], std::vector<Enemy*>& perso, Player& player) {
 void Game::run() {
 	Map maps;
 	int map[10][20] = {};
-	Warrior player;
+	Mage player;
 	std::vector<Enemy*> perso(5);
 	for (int niveau = 1; niveau < 4; ++niveau) {
 		int niveauinvalide = maps.createMap(map, niveau, perso, player);
@@ -71,11 +93,15 @@ void Game::run() {
 			{
 				player.PlayerHp = 0;
 			}
-			player.OnCollision(perso);
+			if (movevalide == 2)
+			{
+				spell(perso,player);
+			}
 			for (int i = 0; i < 5 ; i++)
 			{
 				perso[i]->moveEnemy(*perso[i], map, player);
 			}
+			player.OnCollision(perso);
 		}
 		if(player.PlayerHp <= 0)
 		{
